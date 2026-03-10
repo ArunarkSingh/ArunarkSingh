@@ -1,72 +1,67 @@
-# Hi, I'm Arunark !
+# Arunark Singh
 
-Electrical Engineer (UBC) focused on **Robotics, Machine Learning, and MEMS system design**.
-I develop end-to-end intelligent systems that integrate sensing, perception, and control —> spanning autonomous drone pipelines, FPGA/embedded systems, and micro-scale sensor architectures.
+**Electrical Engineer · UBC** — building intelligent systems at the intersection of robotics, machine learning, and microsystem design.
 
----
+I work across the full stack of autonomous systems: from low-level embedded firmware and MEMS sensor architectures, to perception pipelines and deep learning models. I care about systems that work in the real world — reliable, efficient, and well-engineered end to end.
 
-# ⚙️ Projects
+Currently seeking **full-time or internship roles** in robotics, ML engineering, or embedded/perception systems.
 
-## 🚀 Autonomous Robotics
-
-#### 1. Autonomous Indoor Drone Navigation for 3D Reconstruction
-ROS-based autonomous navigation stack using PX4, VINS-Fusion, FUEL navigation, and motion planning for indoor environments.  
-**Tech:** ROS, PX4, C++, Python, RealSense  
-
-🔗 https://github.com/ArunarkSingh/Autonomous_Inspection_Drone_ICON.git
+📍 Vancouver, BC &nbsp;|&nbsp; 📧 [arunarksingh@gmail.com](mailto:arunarksingh@gmail.com) &nbsp;|&nbsp; 🔗 [LinkedIn](https://linkedin.com/in/arunark-singh)
 
 ---
 
-## 🤖 Deep Learning & Generative Models
- 
-#### 1. Conditional PixelCNN++ (Generation + Zero-Shot Classification)
-Extended PixelCNN++ with early fusion and FiLM-based middle fusion to enable class-conditional image generation and likelihood-based (zero-shot) classification; best model achieved **FID 28** and **74% validation accuracy**.  
-**Tech:** PyTorch, PixelCNN++, FiLM, Python, Weights & Biases    
+## 🛠️ Technical Skills
 
-🔗 https://github.com/ArunarkSingh/Conditional_PixelCNN-Plus.git
-
----
-
-## 🧠 Machine Learning & Data Science  
-
-#### 1. Customer Churn Prediction (Business-Aware ML Pipeline)
-Built an end-to-end churn prediction system using Logistic Regression and XGBoost, optimizing decision thresholds to maximize expected business retention value under class imbalance. Implemented ROC/PR evaluation, SHAP explainability, and deployed a FastAPI inference service.
-**Tech:** Python, scikit-learn, XGBoost, SHAP, FastAPI 
-
-🔗 https://github.com/ArunarkSingh/Customer-Churn-Prediction-Business-ML.git
-
-#### 2. Credit Card Fraud Detection (Imbalanced Classification) 
-Built a validation-tuned fraud detection pipeline under extreme class imbalance, prioritizing recall using precision–recall analysis and threshold optimization.  
-**Tech:** Python, scikit-learn, Logistic Regression, PR/ROC Analysis 
-
-🔗 https://github.com/ArunarkSingh/CreditCard_Fraud_Detection_Imbalanced_ML.git
-
-#### 3. Fake News Detection with Pretrained Transformers (LIAR Dataset)
-Fine-tuned RoBERTa-base on the LIAR fact-checking dataset (~12k political statements), achieving **60.5% test accuracy (macro-F1 0.587)** on binary classification and **29.4% accuracy (macro-F1 0.297)** on the original 6-class task.  
-Developed a FastAPI inference service and generated ROC/PR curves, confusion matrices, and per-class F1 visualizations for evaluation.  
-**Tech:** Python, PyTorch, HuggingFace Transformers, RoBERTa, FastAPI, scikit-learn
-
-🔗 https://github.com/ArunarkSingh/Fake-News-Detection-Roberta.git
+| Domain | Tools & Technologies |
+|---|---|
+| **Languages** | Python, C++ |
+| **Robotics** | ROS / ROS2, PX4, Gazebo, SLAM, VINS-Fusion, OpenCV |
+| **ML / DL** | PyTorch, HuggingFace Transformers, scikit-learn, XGBoost, Weights & Biases |
+| **Embedded** | STM32, Raspberry Pi, FPGA, PCB Design |
+| **MEMS & CAD** | COMSOL Multiphysics, CleWin, MATLAB |
+| **Deployment** | FastAPI, Git |
 
 ---
 
+## 🚀 Selected Projects
 
-# 🧠 Areas of Interest
-- 🤖 Autonomous Robotics (ROS2, PX4, SLAM, Path Planning)
-- 🧩 Machine Learning & Deep Learning (PyTorch, Transformers)
-- ⚙️ MEMS & Microsystem Design (COMSOL, CleWin)
-- 🛠️ Embedded Systems (STM32, Raspberry Pi, PCB Design)
+### Autonomous Systems & Robotics
 
----
-
-# 🧰 Tools & Technologies
-`Python`  `C++`  `ROS2`  `Gazebo`  `PyTorch`  `COMSOL`  `PX4`  `MATLAB`  `STM32`  `OpenCV`
+**[Autonomous Indoor Drone Navigation for 3D Reconstruction](https://github.com/ArunarkSingh/Autonomous_Inspection_Drone_ICON)**  
+Full autonomous navigation stack for indoor 3D reconstruction — integrating PX4 flight control, VINS-Fusion for visual-inertial odometry, FUEL for exploration planning, and a RealSense depth camera. Handles real-time state estimation, motion planning, and map building in GPS-denied environments.  
+`ROS` `PX4` `VINS-Fusion` `C++` `Python` `RealSense`
 
 ---
 
-### 📫 Connect
-[LinkedIn](https://linkedin.com/in/arunark-singh) • [Email](arunarksingh@gmail.com)
+### Deep Learning & Generative Models
+
+**[Conditional PixelCNN++ — Generation & Zero-Shot Classification](https://github.com/ArunarkSingh/Conditional_PixelCNN-Plus)**  
+Extended PixelCNN++ with early fusion and FiLM-based conditioning to support class-conditional image generation and likelihood-based zero-shot classification. Best model: **FID 28**, **74% validation accuracy**.  
+`PyTorch` `PixelCNN++` `FiLM Conditioning` `Weights & Biases`
 
 ---
 
-⭐ *Feel free to explore my repositories or reach out if you’d like to collaborate on robotics or AI research!*
+### Machine Learning Engineering
+
+**[Customer Churn Prediction — Business-Aware ML Pipeline](https://github.com/ArunarkSingh/Customer-Churn-Prediction-Business-ML)**  
+End-to-end churn prediction pipeline using Logistic Regression and XGBoost, with decision threshold optimization for expected business retention value under class imbalance. Includes SHAP explainability and FastAPI deployment.  
+`Python` `XGBoost` `SHAP` `FastAPI` `scikit-learn`
+
+**[Fake News Detection with RoBERTa (LIAR Dataset)](https://github.com/ArunarkSingh/Fake-News-Detection-Roberta)**  
+Fine-tuned RoBERTa-base on ~12k political statements for fact-checking. Achieved **60.5% test accuracy (macro-F1: 0.587)** on binary classification and **29.4%** on the full 6-class task. Deployed as a FastAPI inference service with full evaluation suite (ROC/PR curves, confusion matrices, per-class F1).  
+`PyTorch` `HuggingFace Transformers` `RoBERTa` `FastAPI` `scikit-learn`
+
+**[Credit Card Fraud Detection — Imbalanced Classification](https://github.com/ArunarkSingh/CreditCard_Fraud_Detection_Imbalanced_ML)**  
+Fraud detection pipeline under extreme class imbalance (~0.17% positive rate), optimized for recall using precision-recall analysis and threshold tuning rather than default accuracy metrics.  
+`Python` `scikit-learn` `PR/ROC Analysis`
+
+---
+
+## 🎓 Education
+
+**B.ASc. Electrical Engineering** — University of British Columbia (UBC)  
+Focus: Robotics, MEMS, Machine Learning
+
+---
+
+*Open to robotics engineering, ML engineering, and embedded/perception roles. Feel free to reach out or explore the repos above.*
