@@ -43,6 +43,10 @@ Extended PixelCNN++ with early fusion and FiLM-based conditioning to support cla
 
 ### Machine Learning Engineering
 
+**[Paper Navigator — Semantic Search over ML ArXiv Papers](https://github.com/ArunarkSingh/paper-navigator)**
+Two-stage retrieval system over ~15k chunked ArXiv abstracts: dense ANN search via FAISS HNSW followed by cross-encoder reranking. Papers are split into overlapping 220-word chunks with title/abstract context prepended for retrieval quality. Benchmarked at **~174ms p50 (dense)** and **~329ms p50 (reranked)**. Refactored from a research notebook into a modular, locally-runnable CLI pipeline.
+`Python` `FAISS` `SentenceTransformers` `HuggingFace` `Cross-Encoder Reranking`
+
 **[Customer Churn Prediction — Business-Aware ML Pipeline](https://github.com/ArunarkSingh/Customer-Churn-Prediction-Business-ML)**  
 End-to-end churn prediction pipeline using Logistic Regression and XGBoost, with decision threshold optimization for expected business retention value under class imbalance. Includes SHAP explainability and FastAPI deployment.  
 `Python` `XGBoost` `SHAP` `FastAPI` `scikit-learn`
