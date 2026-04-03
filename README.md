@@ -56,7 +56,7 @@ Extended PixelCNN++ with early fusion and FiLM-based conditioning for class-cond
 
 ---
 
-### Robotics (Prior Work)
+### Robotics  
 
 **[Autonomous Indoor Drone Navigation for 3D Reconstruction](https://github.com/ArunarkSingh/Autonomous_Inspection_Drone_ICON)**  
 Full autonomous navigation stack integrating PX4 flight control, VINS-Fusion for visual-inertial odometry, FUEL for exploration planning, and a RealSense depth camera in GPS-denied environments.  
