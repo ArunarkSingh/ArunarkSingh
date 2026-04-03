@@ -15,10 +15,14 @@ Vancouver, BC | [arunarksingh@gmail.com](mailto:arunarksingh@gmail.com) | [Linke
 | Domain | Tools & Technologies |
 |---|---|
 | **Languages** | Python, SQL, C/C++, Bash, R |
-| **ML / DL** | PyTorch, HuggingFace Transformers, scikit-learn, XGBoost, LLM Fine-tuning, Transformer Architectures |
-| **Data & Pipelines** | pandas, NumPy, Feature Engineering, Reproducible Pipelines, Structured & Unstructured Data |
-| **Search & Retrieval** | FAISS, Semantic Search, RAG, Vector Embeddings, Cross-Encoder Reranking |
-| **MLOps & Cloud** | Azure ML, AWS, Docker, FastAPI, Git, Weights & Biases, CUDA, Mixed-Precision Training |
+| **ML / DL** | PyTorch, HuggingFace Transformers, scikit-learn, XGBoost, LLM Pre-training & Fine-tuning, Transformer Architectures, HistGradientBoosting, Logistic Regression |
+| **Data & Pipelines** | pandas, NumPy, Feature Engineering, Data Preprocessing, Reproducible Pipelines, Structured & Unstructured Data, Class Imbalance Handling, Threshold Optimization |
+| **SQL & Databases** | SQLite, SQL Aggregations, Window Functions, Joins, Filtering, CASE statements, Query Optimization |
+| **Search & Retrieval** | FAISS HNSW, Semantic Search, RAG, Dense & Sparse Retrieval, BM25, Vector Embeddings, Cross-Encoder Reranking, SentenceTransformers |
+| **Explainability** | SHAP, PR/ROC Analysis, Confusion Matrices, Per-class F1, Ablation Studies |
+| **MLOps & Cloud** | Azure ML, AWS (SageMaker/S3), GCP, Docker, FastAPI, Git, CI/CD, Weights & Biases, TensorBoard, Linux |
+| **Model Optimization** | CUDA, Mixed-Precision Training, Multi-GPU Scaling, Performance Benchmarking, Model Drift Monitoring |
+| **Visualization** | Matplotlib, Seaborn, Folium, TensorBoard |
 
 ---
 
