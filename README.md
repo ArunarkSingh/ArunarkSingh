@@ -29,90 +29,21 @@ seeking:   ML Engineer / Data Scientist — internship & new grad
 
 # Projects
 
-Grouped by domain. Each cluster is a different part of the stack I've worked in.
+Grouped by domain — expand the section that's relevant to you.
 
 <div align="center">
 
-[![LLM](https://img.shields.io/badge/①%20LLM%20Systems%20%26%20Retrieval-6C63FF?style=for-the-badge)](#-llm-systems--retrieval)
-[![DL](https://img.shields.io/badge/②%20Deep%20Learning%20%26%20Generative-1f6feb?style=for-the-badge)](#-deep-learning--generative-modeling)
-[![Applied](https://img.shields.io/badge/③%20Applied%20ML%20%26%20Data%20Science-2ea043?style=for-the-badge)](#-applied-ml--data-science)
-[![Robotics](https://img.shields.io/badge/④%20Robotics%20%26%20Autonomy-d29922?style=for-the-badge)](#-robotics--autonomous-systems)
+[![Applied](https://img.shields.io/badge/①%20Applied%20ML%20%26%20Data%20Science-2ea043?style=for-the-badge)](#applied-ml--data-science)
+[![LLM](https://img.shields.io/badge/②%20LLM%20Systems%20%26%20Retrieval-6C63FF?style=for-the-badge)](#llm-systems--retrieval)
+[![DL](https://img.shields.io/badge/③%20Deep%20Learning%20%26%20Generative-1f6feb?style=for-the-badge)](#deep-learning--generative-modeling)
+[![Robotics](https://img.shields.io/badge/④%20Robotics%20%26%20Autonomy-d29922?style=for-the-badge)](#robotics--autonomous-systems)
+[![Research](https://img.shields.io/badge/⑤%20Research%20%26%20Theory-a371f7?style=for-the-badge)](#research--theory)
 
 </div>
 
 ---
 
-## ① LLM Systems & Retrieval
-
-*Decoder-only fine-tuning, hybrid retrieval, and judge-free evaluation of model behaviour.*
-
-> ### [Function-Calling LoRA Fine-Tuning](https://github.com/ArunarkSingh/qwen-function-calling-lora) &nbsp;·&nbsp; ![](https://img.shields.io/badge/31%25%20→%2079%25%20exact%20match-6C63FF?style=flat-square)
->
-> Fine-tuned **Qwen2.5-1.5B** with 4-bit QLoRA to reliably emit structured tool calls. Trained on xLAM with tool schemas in the system prompt and completion-only loss, so the model *produces* calls instead of echoing schemas.
->
-> Evaluated with a **judge-free** metric — strict BFCL-style AST match on function name *and* parsed JSON arguments. Error analysis shows format (99% JSON validity) and tool selection (98% name accuracy) fully solved; residual misses are argument-level. Adapter published to the HF Hub; runs end-to-end on free-tier Colab.
->
-> `PyTorch` `Transformers` `PEFT` `QLoRA` `bitsandbytes` `TRL`
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [Neural Paper Navigator](https://github.com/ArunarkSingh/neural-paper-navigator-rag)
-Hybrid retrieval + RAG over ~15k chunked ArXiv ML papers. FAISS HNSW dense search with BGE embeddings, fused with BM25 and cross-encoder reranking. Refactored from research prototype into a modular CLI pipeline with RAGAS-style eval.
-
-![](https://img.shields.io/badge/12ms%20p50%20dense-6C63FF?style=flat-square) ![](https://img.shields.io/badge/163ms%20w%2F%20rerank-6C63FF?style=flat-square)
-
-`FAISS` `SentenceTransformers` `BM25` `Cross-Encoder` `RAG`
-
-</td>
-<td width="50%" valign="top">
-
-### Agent Evaluation Harness &nbsp;![](https://img.shields.io/badge/in%20progress-8b949e?style=flat-square)
-τ²-bench-style evaluation of tool-using agents — measuring task completion and tool-selection behaviour rather than surface text quality. Includes a retrieval ablation to isolate what actually drives agent success.
-
-![](https://img.shields.io/badge/agent%20eval-8b949e?style=flat-square) ![](https://img.shields.io/badge/tool%20use-8b949e?style=flat-square)
-
-`Python` `LLM Agents` `Ablation Studies`
-
-</td>
-</tr>
-</table>
-
----
-
-## ② Deep Learning & Generative Modeling
-
-*Paper-to-implementation work: architecture modification, conditioning mechanisms, and transformer fine-tuning.*
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [Conditional PixelCNN++](https://github.com/ArunarkSingh/Conditional_PixelCNN-Plus)
-Extended PixelCNN++ with early fusion and FiLM-based conditioning for class-conditional generation and likelihood-based zero-shot classification.
-
-![](https://img.shields.io/badge/FID%2028-1f6feb?style=flat-square) ![](https://img.shields.io/badge/74%25%20val%20acc-1f6feb?style=flat-square)
-
-`PyTorch` `PixelCNN++` `FiLM Conditioning` `Weights & Biases`
-
-</td>
-<td width="50%" valign="top">
-
-### [Fake News Detection — RoBERTa](https://github.com/ArunarkSingh/Fake-News-Detection-Roberta)
-Fine-tuned RoBERTa-base on ~12k LIAR political statements for 6-class fact-checking. Served via FastAPI with a full evaluation suite: ROC/PR curves, confusion matrices, per-class F1.
-
-![](https://img.shields.io/badge/60.5%25%20accuracy-1f6feb?style=flat-square) ![](https://img.shields.io/badge/macro--F1%200.587-1f6feb?style=flat-square)
-
-`PyTorch` `Transformers` `RoBERTa` `FastAPI`
-
-</td>
-</tr>
-</table>
-
----
-
-## ③ Applied ML & Data Science
+## Applied ML & Data Science
 
 *Real data, real constraints — cost-sensitive decisions, class imbalance, and explainability that survives stakeholder questions.*
 
@@ -165,15 +96,117 @@ Quasi-experimental evaluation of a policy intervention using interrupted time se
 
 ---
 
-## ④ Robotics & Autonomous Systems
+## LLM Systems & Retrieval
+
+*Decoder-only fine-tuning, hybrid retrieval, and judge-free evaluation of model behaviour.*
+
+> ### [Function-Calling LoRA Fine-Tuning](https://github.com/ArunarkSingh/qwen-function-calling-lora) &nbsp;·&nbsp; ![](https://img.shields.io/badge/31%25%20→%2079%25%20exact%20match-6C63FF?style=flat-square)
+>
+> Fine-tuned **Qwen2.5-1.5B** with 4-bit QLoRA to reliably emit structured tool calls. Trained on xLAM with tool schemas in the system prompt and completion-only loss, so the model *produces* calls instead of echoing schemas.
+>
+> Evaluated with a **judge-free** metric — strict BFCL-style AST match on function name *and* parsed JSON arguments. Error analysis shows format (99% JSON validity) and tool selection (98% name accuracy) fully solved; residual misses are argument-level. Adapter published to the HF Hub; runs end-to-end on free-tier Colab.
+>
+> `PyTorch` `Transformers` `PEFT` `QLoRA` `bitsandbytes` `TRL`
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Neural Paper Navigator](https://github.com/ArunarkSingh/neural-paper-navigator-rag)
+Hybrid retrieval + RAG over ~15k chunked ArXiv ML papers. FAISS HNSW dense search with BGE embeddings, fused with BM25 and cross-encoder reranking. Refactored from research prototype into a modular CLI pipeline with RAGAS-style eval.
+
+![](https://img.shields.io/badge/12ms%20p50%20dense-6C63FF?style=flat-square) ![](https://img.shields.io/badge/163ms%20w%2F%20rerank-6C63FF?style=flat-square)
+
+`FAISS` `SentenceTransformers` `BM25` `Cross-Encoder` `RAG`
+
+</td>
+<td width="50%" valign="top">
+
+### Agent Evaluation Harness &nbsp;![](https://img.shields.io/badge/in%20progress-8b949e?style=flat-square)
+τ²-bench-style evaluation of tool-using agents — measuring task completion and tool-selection behaviour rather than surface text quality. Includes a retrieval ablation to isolate what actually drives agent success.
+
+![](https://img.shields.io/badge/agent%20eval-8b949e?style=flat-square) ![](https://img.shields.io/badge/tool%20use-8b949e?style=flat-square)
+
+`Python` `LLM Agents` `Ablation Studies`
+
+</td>
+</tr>
+</table>
+
+---
+
+## Deep Learning & Generative Modeling
+
+*Paper-to-implementation work: architecture modification, conditioning mechanisms, and transformer fine-tuning.*
+
+<details>
+<summary><b>Expand — 2 projects (PixelCNN++, RoBERTa) →</b></summary>
+
+<br>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Conditional PixelCNN++](https://github.com/ArunarkSingh/Conditional_PixelCNN-Plus)
+Extended PixelCNN++ with early fusion and FiLM-based conditioning for class-conditional generation and likelihood-based zero-shot classification.
+
+![](https://img.shields.io/badge/FID%2028-1f6feb?style=flat-square) ![](https://img.shields.io/badge/74%25%20val%20acc-1f6feb?style=flat-square)
+
+`PyTorch` `PixelCNN++` `FiLM Conditioning` `Weights & Biases`
+
+</td>
+<td width="50%" valign="top">
+
+### [Fake News Detection — RoBERTa](https://github.com/ArunarkSingh/Fake-News-Detection-Roberta)
+Fine-tuned RoBERTa-base on ~12k LIAR political statements for 6-class fact-checking. Served via FastAPI with a full evaluation suite: ROC/PR curves, confusion matrices, per-class F1.
+
+![](https://img.shields.io/badge/60.5%25%20accuracy-1f6feb?style=flat-square) ![](https://img.shields.io/badge/macro--F1%200.587-1f6feb?style=flat-square)
+
+`PyTorch` `Transformers` `RoBERTa` `FastAPI`
+
+</td>
+</tr>
+</table>
+
+</details>
+
+---
+
+## Robotics & Autonomous Systems
 
 *Where I came from — embedded systems, sensor fusion, and perception under hard real-time constraints.*
+
+<details>
+<summary><b>Expand — capstone: autonomous indoor drone →</b></summary>
+
+<br>
 
 > ### [Autonomous Indoor Drone Navigation for 3D Reconstruction](https://github.com/ArunarkSingh/Autonomous_Inspection_Drone_ICON)
 >
 > Full autonomous navigation stack for GPS-denied environments: **PX4** flight control, **VINS-Fusion** visual-inertial odometry, **FUEL** exploration planning, and a RealSense depth camera for onboard reconstruction. Capstone project bridging my electrical engineering background into perception and state estimation.
 >
 > `ROS` `PX4` `VINS-Fusion` `C++` `Python` `RealSense`
+
+</details>
+
+---
+
+## Research & Theory
+
+*Independent theoretical work — what structural conditions would make an AI system genuinely curious?*
+
+> ### [The Incomplete Mind: Asymptotic Goal Architecture](https://github.com/ArunarkSingh/incomplete-mind-AGA) &nbsp;·&nbsp; ![](https://img.shields.io/badge/independent%20research-a371f7?style=flat-square)
+>
+> Sole-authored theoretical paper proposing **Asymptotic Goal Architecture (AGA)** — a framework in which curiosity is not engineered as a reward signal but emerges as a structural consequence of pursuing a goal that is permanently incomplete.
+>
+> The core argument: intrinsic-motivation approaches treat curiosity as something to be rewarded, so the behaviour disappears when the reward does. AGA instead specifies four conditions a goal must satisfy — **approachability**, **incompletability**, **generativity**, and **coherence** — under which continued inquiry becomes the system's default rather than its incentive.
+>
+> Positioned against Schmidhuber's formal theory of creativity, Pathak et al. on curiosity-driven exploration, and Stanley & Lehman on open-endedness. Framed explicitly as a research agenda inviting critique, with a staged path from formalization to small-scale empirical validation.
+>
+> ![](https://img.shields.io/badge/status-preprint%20(arXiv%20pending)-a371f7?style=flat-square) ![](https://img.shields.io/badge/sole%20author-a371f7?style=flat-square)
+>
+> `Theory` `Intrinsic Motivation` `Open-Ended Learning` `Agent Architecture`
 
 ---
 
