@@ -42,7 +42,7 @@ seeking:   ML Engineer / Data Scientist — internship & new grad
 
 # Projects
 
-Grouped by domain — expand the section that's relevant to you.
+Grouped by domain — click on the section that you would like to explore.
 
 <div align="center">
 
