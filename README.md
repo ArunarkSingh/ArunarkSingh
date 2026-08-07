@@ -30,6 +30,10 @@ Vancouver, BC | [arunarksingh@gmail.com](mailto:arunarksingh@gmail.com) | [Linke
 
 ### Machine Learning & Data Science
 
+**[Function-Calling LoRA Fine-Tuning](https://github.com/ArunarkSingh/qwen-function-calling-lora)**  
+Fine-tuned Qwen2.5-1.5B with QLoRA (4-bit) to reliably generate structured tool calls, filling a decoder-only generation gap alongside my earlier encoder-only work. Trained on the xLAM function-calling dataset reformatted so tool schemas sit in the system prompt and the target is a raw JSON call, with completion-only loss so the model learns to *produce* calls rather than echo schemas. Evaluated with an objective, judge-free metric — strict BFCL-style AST match (function name **and** arguments compared as parsed JSON) — raising exact-match accuracy from **31% to 79%** on a held-out test set. Error analysis shows fine-tuning fully solved output format (JSON validity 99%) and tool selection (name accuracy 98%), with residual misses almost entirely argument-level. Adapter [published to the Hugging Face Hub](https://huggingface.co/Arunark/qwen2.5-1.5b-function-calling-lora); runs end-to-end on free-tier Colab.  
+`Python` `PyTorch` `Transformers` `PEFT` `QLoRA` `bitsandbytes` `TRL` `Hugging Face`
+
 **[Vancouver Rental Market Analysis](https://github.com/ArunarkSingh/rental-market-analysis-vancouver)**  
 Scraped 342 live Craigslist listings across Metro Vancouver, joined with SkyTrain station coordinates, and built an end-to-end analysis pipeline to answer: which neighbourhoods are underpriced, does transit proximity affect rent, and what features drive price most? Key finding: neighbourhood accounts for more price variance than SkyTrain proximity. Includes GBM model with SHAP explainability, SQL analysis (SQLite), and an interactive Folium map.  
 `Python` `pandas` `scikit-learn` `SHAP` `SQLite` `Folium` `BeautifulSoup`
