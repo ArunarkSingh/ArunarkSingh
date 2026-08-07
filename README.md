@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=2800&pause=900&color=6C63FF&center=true&vCenter=true&width=520&lines=Machine+Learning+Engineer;LLM+Fine-Tuning+%26+RAG+Systems;Retrieval%2C+Generative+Models%2C+Tabular+ML;Incoming+UBC+MDS+2026" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=6C63FF&center=true&vCenter=true&width=520&lines=Machine+Learning+Engineer;LLM+Fine-Tuning+%26+RAG+Systems;Retrieval%2C+Generative+Models%2C+Tabular+ML;Incoming+UBC+MDS+2026" alt="Typing SVG" />
 
 # Arunark Singh
 
@@ -24,6 +24,19 @@ focus:     [LLM fine-tuning, retrieval systems, generative models, applied ML]
 building:  judge-free eval harnesses for tool-calling LLMs
 seeking:   ML Engineer / Data Scientist — internship & new grad
 ```
+---
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
 
 ---
 
@@ -139,11 +152,6 @@ Hybrid retrieval + RAG over ~15k chunked ArXiv ML papers. FAISS HNSW dense searc
 
 *Paper-to-implementation work: architecture modification, conditioning mechanisms, and transformer fine-tuning.*
 
-<details>
-<summary><b>Expand — 2 projects (PixelCNN++, RoBERTa) →</b></summary>
-
-<br>
-
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -169,26 +177,17 @@ Fine-tuned RoBERTa-base on ~12k LIAR political statements for 6-class fact-check
 </tr>
 </table>
 
-</details>
-
 ---
 
 ## Robotics & Autonomous Systems
 
 *Where I came from — embedded systems, sensor fusion, and perception under hard real-time constraints.*
 
-<details>
-<summary><b>Expand — capstone: autonomous indoor drone →</b></summary>
-
-<br>
-
 > ### [Autonomous Indoor Drone Navigation for 3D Reconstruction](https://github.com/ArunarkSingh/Autonomous_Inspection_Drone_ICON)
 >
 > Full autonomous navigation stack for GPS-denied environments: **PX4** flight control, **VINS-Fusion** visual-inertial odometry, **FUEL** exploration planning, and a RealSense depth camera for onboard reconstruction. Capstone project bridging my electrical engineering background into perception and state estimation.
 >
 > `ROS` `PX4` `VINS-Fusion` `C++` `Python` `RealSense`
-
-</details>
 
 ---
 
@@ -276,22 +275,9 @@ Fine-tuned RoBERTa-base on ~12k LIAR political statements for 6-class fact-check
 
 ---
 
-## GitHub Activity
-
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ArunarkSingh&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=6C63FF&icon_color=6C63FF&theme=tokyonight" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArunarkSingh&layout=compact&langs_count=8&hide_border=true&title_color=6C63FF&theme=tokyonight" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ArunarkSingh&bg_color=1a1b27&color=6C63FF&line=6C63FF&point=ffffff&area=true&hide_border=true" width="98%" />
-
-</div>
-
----
-
-<div align="center">
-
-**Open to ML engineering and data science internship & new grad roles.**
+**Open to ML engineering, data science, and robotic internships & new grad roles.**
 
 Feel free to reach out — or just dig through the repos above.
 
